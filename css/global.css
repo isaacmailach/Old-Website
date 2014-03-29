@@ -1,0 +1,11 @@
+body {
+	font-family:Arial, sans-serif;
+}
+#logo {
+	height:5rem;
+}
+a {
+	text-decoration:none;
+	color:black;
+	font-weight:bold;
+}
