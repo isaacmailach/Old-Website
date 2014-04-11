@@ -1,11 +1,16 @@
 body {
-	font-family:Arial, sans-serif;
+	font-family: Arial, sans-serif;
 }
-#logo {
-	height:5rem;
+.header-logo {
+	height: 5rem;
 }
-a {
-	text-decoration:none;
-	color:black;
-	font-weight:bold;
+.header-nav-link {
+    padding: 0.3rem;
+    text-decoration: none;
+    color: black;
+}
+.content-block-item-link {
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
 }
