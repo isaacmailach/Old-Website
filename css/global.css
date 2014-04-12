@@ -1,16 +1,33 @@
 body {
 	font-family: Arial, sans-serif;
+    margin: 0;
 }
 .header-logo {
-	height: 5rem;
+	height: 6rem;
+    margin: 1rem;
 }
 .header-nav-link {
-    padding: 0.3rem;
-    text-decoration: none;
     color: black;
+    padding: 15px;
+    text-decoration: none;
+}
+.header-nav-link_left {
+    float: left;
+}
+.header-nav-link_right {
+    float: right;
+}
+.content {
+    clear: both;
+    margin: 15px;
 }
 .content-block-item-link {
-	text-decoration: none;
 	color: black;
 	font-weight: bold;
+    text-decoration: none;
+}
+.footer {
+    background-color: #cecece;
+    padding: 15px;
+    text-align: center;
 }
