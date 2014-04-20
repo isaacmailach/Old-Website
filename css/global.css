@@ -1,14 +1,20 @@
 body {
+    background-attachment: fixed;
+    background-image: url('img/background_image.jpg');
+    background-size: cover;
 	font-family: Arial, sans-serif;
     margin: 0;
 }
 
-.header-logo, .header-nav, .content-block {
+.content-block, .header-logo, .header-nav {
     border-radius: 8px;
     -moz-box-shadow: 6px 6px 30px 0px rgba(50, 50, 50, 0.9);
     -webkit-box-shadow: 6px 6px 30px 0px rgba(50, 50, 50, 0.9);
-    box-shadow: 6px 6px 30px 0px rgba(50, 50, 50, 0.9);
+    box-shadow: 6px 6px 30px 0px rgba(30, 30, 30, 1);
     margin: 30px;
+}
+.content-block, .header-nav {
+    background-color: white;
 }
 
 .header-logo {
@@ -22,6 +28,7 @@ body {
     color: black;
     padding: 15px;
     text-decoration: none;
+    transition: background-color 0.6s;
 }
 .header-nav-link_left {
     float: left;
@@ -59,4 +66,8 @@ body {
     margin-top: 30px;
     padding: 15px;
     text-align: center;
+}
+
+.header-nav-link:hover {
+    background-color: #d6d6d6;
 }
