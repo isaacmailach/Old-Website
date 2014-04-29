@@ -11,24 +11,31 @@ body {
     -moz-box-shadow: 6px 6px 30px 0px rgba(50, 50, 50, 0.9);
     -webkit-box-shadow: 6px 6px 30px 0px rgba(50, 50, 50, 0.9);
     box-shadow: 6px 6px 30px 0px rgba(30, 30, 30, 1);
-    margin-bottom: 15px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
+}
+.content-block, .header-logo {
+	margin-bottom: 15px;
 }
 .content-block, .header-nav {
     background-color: white;
 }
 
+.header {
+	padding: 15px;
+}
 .header-logo {
 	height: 90px;
     margin-bottom: 30px;
 }
 .header-nav {
     height: 50px;
+	overflow: hidden;
 }
 .header-nav-link {
     color: black;
+	height: 100%;
     padding: 15px;
     text-decoration: none;
     transition: background-color 0.6s;
@@ -43,7 +50,7 @@ body {
 .content {
     clear: both;
     overflow: hidden;
-    padding: 15px;
+	padding: 15px;
 }
 .content-block {
     overflow: hidden;
@@ -92,10 +99,13 @@ body {
 }
 
 @media screen and (min-width: 990px) {
-    .content-block, .header-logo, .header-nav {
+    .content-block, .header-logo {
         margin-bottom: 30px;
     }
     
+	.header {
+        padding: 30px 30px 0 30px;
+    }
     .content {
         padding: 30px;
     }
