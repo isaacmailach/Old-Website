@@ -66,7 +66,11 @@ body {
     width: 100%;
 }
 .content-block-heading {
-    margin: 0;
+    background-color: #d6d6d6;
+    color: #191919;
+    margin: -10px;
+    padding: 10px;
+    text-shadow: 0px 1px 1px #4d4d4d;
 }
 .content-block-heading_link {
     color: black;
@@ -80,10 +84,15 @@ body {
 .content-block-item-heading {
     font-size: 1rem;
 }
+.content-block-item-heading_link {
+	color: black;
+	font-weight: bold;
+    text-decoration: none;
+}
 .content-block-item-image {
     width: 100%;
 }
-.content-block-item-link {
+.content-block-item-text_link {
 	color: black;
 	font-weight: bold;
     text-decoration: none;
