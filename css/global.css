@@ -62,9 +62,9 @@ body {
 	padding: 15px;
 }
 .content-block {
+    display: block;
 	overflow: hidden;
     padding: 7.5px;
-    width: 100%;
 }
 .content-block-heading {
     background-color: #d6d6d6;
@@ -155,10 +155,9 @@ body {
         margin-right: 0;
         width: 330px;
     }
-    /*.content-block {
-        float: left;
-        margin-right: -400px;
-    }*/
+    .content-block {
+        margin-right: 345px;
+    }
 }
 @media screen and (min-width: 1065px) {
     .content-block, .header-logo {
@@ -170,6 +169,9 @@ body {
     }
     .content {
         padding: 30px;
+    }
+    .content-block {
+        margin-right: 360px;
     }
 }
 @media screen and (min-width: 1380px) and (max-width: 1695px) {
