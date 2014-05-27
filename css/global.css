@@ -77,6 +77,13 @@ body {
     color: black;
     text-decoration: none;
 }
+.content-block-heading_link .content-block-heading:after {
+    color: #535353;
+    content: "More...";
+    font-size: 0.8rem;
+    padding-left: 10px;
+    text-shadow: none;
+}
 .content-block-item {
 	float: left;
 	min-height: 200px;
