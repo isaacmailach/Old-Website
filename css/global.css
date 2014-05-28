@@ -137,7 +137,7 @@ body {
 		display: none;
 	}
 }
-@media screen and (min-width: 675px) and (max-width: 1380px) {
+@media screen and (min-width: 675px) and (max-width: 1020px) {
     .content-block-item {
 		width: 50%;
 	}
@@ -150,14 +150,29 @@ body {
 	}
 }
 @media screen and (min-width: 1020px) {
-    aside.content-aside {
+    .content aside.content-aside {
         float: right;
         margin-right: 0;
         width: 330px;
     }
-    .content-block {
+    .content_short .content-block {
         margin-right: 345px;
     }
+}
+@media screen and (min-width: 1020px) and (max-width: 1380px) {
+    .content-block-item {
+		width: 33.3333%;
+	}
+    .content_short .content-block-item {
+		width: 50%;
+	}
+
+    .content-block-item:nth-child(n+5) {
+        border-top: solid 1px gray;
+    }
+    .content_short .content-block-item:nth-child(n+4) {
+		display: none;
+	}
 }
 @media screen and (min-width: 1065px) {
     .content-block, .header-logo {
@@ -170,16 +185,22 @@ body {
     .content {
         padding: 30px;
     }
-    .content-block {
+    .content_short .content-block {
         margin-right: 360px;
     }
 }
 @media screen and (min-width: 1380px) and (max-width: 1695px) {
 	.content-block-item {
+		width: 25%;
+	}
+    .content_short .content-block-item {
 		width: 33.3333%;
 	}
 
-    .content-block-item:nth-child(n+5) {
+    .content-block-item:nth-child(n+6) {
+        border-top: solid 1px gray;
+    }
+    .content_short .content-block-item:nth-child(n+5) {
         border-top: solid 1px gray;
     }
 	.content_short .content-block-item:nth-child(n+5) {
@@ -188,10 +209,16 @@ body {
 }
 @media screen and (min-width: 1695px) {
 	.content-block-item {
+		width: 20%;
+	}
+    .content_short .content-block-item {
 		width: 25%;
 	}
 
-    .content-block-item:nth-child(n+6) {
+    .content-block-item:nth-child(n+7) {
+        border-top: solid 1px gray;
+    }
+    .content_short .content-block-item:nth-child(n+6) {
         border-top: solid 1px gray;
     }
 	.content_short .content-block-item:nth-child(n+6) {
