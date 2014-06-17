@@ -21,7 +21,7 @@ body {
 .header-logo, .header-title {
     float: left;
 }
-.header-logo, .header-nav, .content-block {
+.header-logo, .header-nav, .content-block, .popup-content {
     border-radius: 8px;
     -moz-box-shadow: 10px 10px 60px 0px #1e1e1e;
     -webkit-box-shadow: 10px 10px 60px 0px #1e1e1e;
@@ -129,6 +129,25 @@ body {
     padding: 15px;
     text-align: center;
     width: 100%;
+}
+
+.popup {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    height: 100vh;
+    left: 0;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.popup-content {
+    background-color: white;
+    margin: auto;
+    max-width: 1000px;
+    max-height: 100vh;
+    min-height: 500px;
+    width:100%;
 }
 
 .header-nav-link:hover {
