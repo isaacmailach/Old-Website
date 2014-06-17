@@ -136,9 +136,11 @@ body {
     display: none;
     height: 100vh;
     left: 0;
+    opacity: 0;
     padding: 15px;
     position: fixed;
     top: 0;
+    transition: opacity 1s linear;
     width: 100%;
 }
 .popup-content {

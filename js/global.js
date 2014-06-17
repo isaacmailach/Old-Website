@@ -3,12 +3,14 @@ $(document).ready(function () {
         $('.footer').css({'position': 'absolute', 'bottom': '0'});
     }
     $('.content-block-item-heading').click(function () {
+        $('.popup').css({'display': 'block', 'opacity': '1'});
+        var item_id = $(this).parent().data('id');
         $.get('data/item_info.xml', function (item_info){
-                alert('success');
+            $('.popup-content-heading').html($(item_info).find('item[id="' + item_id + '"]').find('heading').text());
+            $('.popup-content-text').html($(item_info).find('item[id="' + item_id + '"]').find('text').text());
         })
             .fail(function() {
                 alert('fail');
             });
-        $(this).parent().data('id')
     });
 });
