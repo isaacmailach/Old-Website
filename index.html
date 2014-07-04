@@ -14,7 +14,6 @@
 	</head>
 	<body>
 		<!-- Template - Header -->
-		<div id="background"></div>
         <header class="header">
             <a class="header-logo_link" href="index.html"><img class="header-logo" src="img/logo.png" /></a>
             <section class="header-title">
@@ -82,33 +81,39 @@
                 <a class="content-block-heading_link" href="films.html"><h2 class="content-block-heading">Films</h2></a>
                 <section class="content-block-item" data-id="020003">
                     <h3 class="content-block-item-heading">Mining and the World</h3>
-                    <iframe width="100%" height="250px" src="//www.youtube.com/embed/0oQtFYP8FTY" frameborder="0" allowfullscreen></iframe>
+                    <section class="content-block-item-wrapper">
+                        <iframe class="content-block-item-wrapper-video" src="//www.youtube.com/embed/0oQtFYP8FTY" frameborder="0" allowfullscreen></iframe>
+                    </section>
                 </section>
                 <section class="content-block-item" data-id="020002">
                     <h3 class="content-block-item-heading">Saving for Yesterday</h3>
-                    <iframe width="100%" height="250px" src="//www.youtube.com/embed/jdqoPvBPDHY?rel=0" frameborder="0" allowfullscreen></iframe>
+                    <section class="content-block-item-wrapper">
+                        <iframe class="content-block-item-wrapper-video" height="250px" src="//www.youtube.com/embed/jdqoPvBPDHY?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </section>
                 </section>
                 <section class="content-block-item" data-id="020001">
                     <h3 class="content-block-item-heading">The Day the Caf Ran Out of Muffins</h3>
-                    <iframe width="100%" height="250px" src="//www.youtube.com/embed/-0XGoe5uM50?rel=0" frameborder="0" allowfullscreen></iframe>
+                    <section class="content-block-item-wrapper">
+                        <iframe class="content-block-item-wrapper-video" height="250px" src="//www.youtube.com/embed/-0XGoe5uM50?rel=0" frameborder="0" allowfullscreen></iframe>
+                    </section>
                 </section>
             </section>
             <section class="content-block">
                 <a class="content-block-heading_link" href="visual_artworks.html"><h2 class="content-block-heading">Visual Artworks</h2></a>
                 <section class="content-block-item" data-id="030001">
                     <h3 class="content-block-item-heading">Galadriel</h3>
-                    <a class="content-block-item-image_link" onclick=""><img class="content-block-item-image" src="img/visual-artworks/item1.jpg" /></a>
+                    <a class="content-block-item-image_link"><img class="content-block-item-image" src="img/visual-artworks/000101.jpg" /></a>
                 </section>
             </section>
             <section class="content-block">
                 <a class="content-block-heading_link" href="coding_projects.html"><h2 class="content-block-heading">Coding Projects</h2></a>
                 <section class="content-block-item" data-id="040002">
 					<h3 class="content-block-item-heading">Time</h3>
-					<a class="content-block-item-image_link" href="https://isaacmailach.github.io/Time/Time/index.html" target="_blank"><img class="content-block-item-image" src="img/coding-projects/item1.jpg" /></a>
+					<a class="content-block-item-image_link" href="https://isaacmailach.github.io/Time/Time/index.html" target="_blank"><img class="content-block-item-image" src="img/coding-projects/000201.jpg" /></a>
                 </section>
                 <section class="content-block-item" data-id="040001">
 					<h3 class="content-block-item-heading">Fun Functions</h3>
-					<a class="content-block-item-image_link" href="http://isaacmailach.github.io/Fun-Functions/Fun%20Functions/index.html" target="_blank"><img class="content-block-item-image" src="img/coding-projects/item2.jpg" /></a>
+					<a class="content-block-item-image_link" href="http://isaacmailach.github.io/Fun-Functions/Fun%20Functions/index.html" target="_blank"><img class="content-block-item-image" src="img/coding-projects/000101.jpg" /></a>
                 </section>
             </section>
         </section>
@@ -117,9 +122,11 @@
             <small class="footer-text">&copy Isaac Mailach</small>
         </footer>
         <!-- Template - Overlays -->
+        <div class="background"></div>
         <div class="popup">
             <section class="popup-content">
                 <h3 class="popup-content-heading"></h3>
+                <section class="popup-content-other"></section>
                 <section class="popup-content-imagebox"></section>
                 <p class="popup-content-text"></p>
             </section>
