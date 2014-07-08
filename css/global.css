@@ -1,5 +1,5 @@
 body {
-	font-family: Arial, sans-serif;
+	font-family: Roboto, Arial, sans-serif;
     margin: 0;
 }
 .background {
@@ -86,9 +86,9 @@ body {
 .content-block-heading {
     background-color: #d6d6d6;
     color: #191919;
+    font-weight: 900;
     margin: -10px;
     padding: 10px;
-    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.7);
 }
 .content-block-item {
     -moz-box-sizing:border-box;
@@ -101,6 +101,7 @@ body {
 }
 .content-block-item-heading {
     font-size: 1.2rem;
+    font-weight: 700;
 }
 .content-block-item-heading_link {
 	font-weight: bold;
@@ -177,7 +178,6 @@ body {
     content: "More...";
     font-size: 0.8rem;
     padding-left: 10px;
-    text-shadow: none;
 }
 
 @media screen and (max-width: 675px) {
@@ -238,6 +238,7 @@ body {
     }
     .content {
         padding: 30px;
+        padding-bottom: 100px;
     }
     .content_short .content-block {
         margin-right: 360px;
