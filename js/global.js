@@ -9,9 +9,6 @@ $(document).ready(function () {
     })
 
     // AJAX Info Popup
-    if ($(document).height() > $(window).height() === false) {
-        $('.footer').css({'position': 'absolute', 'bottom': '0'});
-    }
     $('.content-block-item-heading').click(function () {
         var item_id = $(this).parent().data('id');
         $('.popup-content-imagebox').empty();

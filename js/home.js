@@ -2,8 +2,21 @@ $(document).ready(function() {
 
     // Fixed About Block
     $(window).scroll(function() {
-        if ($(document).width() > 1020 && $(document).scrollTop() > $('.content').offset().top) {
-            $('.content-aside').css({'position': 'fixed', 'right': '30px', 'top': '30px'});    
+        if ($(document).scrollTop() > $('.content').offset().top && $(window).width() > 1147) {
+            $('.content-aside').css({'position': 'fixed', 'right': '15px', 'top': '15px'});
+            if ($(window).width() > 1192) {
+                $('.content-aside').css({'right': '30px', 'top': '30px'});
+            }
+        } else {
+            $('.content-aside').css({'position': 'static'});
+        }
+    });
+    $(window).resize(function() {
+        if ($(document).scrollTop() > $('.content').offset().top && $(window).width() > 1147) {
+            $('.content-aside').css({'position': 'fixed', 'right': '15px', 'top': '15px'});
+            if ($(window).width() > 1192) {
+                $('.content-aside').css({'right': '30px', 'top': '30px'});
+            }
         } else {
             $('.content-aside').css({'position': 'static'});
         }

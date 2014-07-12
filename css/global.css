@@ -1,10 +1,21 @@
 body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
 	font-family: Roboto, Arial, sans-serif;
     margin: 0;
+    min-height: 100vh;
 }
 .background {
     background-color: #add24a;
 	background-image: url('img/background_image.jpg');
+	-webkit-background-size: 100% 100%;
 	background-size: 100%;
 	height: 110vh;
 	position: fixed;
@@ -22,7 +33,6 @@ body {
 }
 .header-logo, .header-nav, .content-block, .popup-content {
     border-radius: 8px;
-    -moz-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
     -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
     -moz-box-sizing: border-box;
@@ -53,6 +63,7 @@ body {
 .header-nav-link {
 	height: 100%;
     padding: 15px;
+    -webkit-transition: background-color 0.6s;
     transition: background-color 0.6s;
 }
 .header-nav-link_left {
@@ -75,11 +86,20 @@ body {
 
 .content {
     clear: both;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     overflow: hidden;
 	padding: 15px;
 }
 .content-block {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
     display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
 	overflow: hidden;
     padding: 7.5px;
@@ -97,21 +117,26 @@ body {
     width: 100%;
 }
 .content-block-item {
-    -moz-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
     -webkit-box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
     box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.16);
-    -moz-box-sizing:border-box;
-    -webkit-box-sizing:border-box;
-    box-sizing:border-box;
-    flex: 1 1 350px;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
 	float: left;
     margin: 10px;
 	min-height: 200px;
+    min-width: 350px;
     padding: 15px;
+    -webkit-transition: -webkit-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
 }
 .content-block-item-heading {
+    margin-top: 0;
     font-size: 1.2rem;
     font-weight: 700;
 }
@@ -147,7 +172,6 @@ body {
     -moz-box-sizing: border-box;
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    -moz-box-shadow: inset 0px 8px 30px 0px rgba(50, 50, 50, 0.9);
     -webkit-box-shadow: inset 0px 8px 30px 0px rgba(50, 50, 50, 0.9);
     box-shadow: inset 0px 8px 30px 0px rgba(50, 50, 50, 0.9);
     clear: both;
@@ -168,6 +192,7 @@ body {
     padding: 15px;
     position: fixed;
     top: 0;
+    -webkit-transition: opacity 0.15s ease-in;
     transition: opacity 0.15s ease-in;
     width: 100%;
 }
@@ -192,22 +217,25 @@ body {
     padding-left: 10px;
 }
 .content-block-item:hover {
-    -moz-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-@media screen and (max-width: 675px) {
+@media screen and (max-width: 802px) {
+    .content_short .content-block-item {
+        min-width: 0;
+    }
+
 	.content_short .content-block-item:nth-child(n+3) {
 		display: none;
 	}
 }
-@media screen and (min-width: 675px) and (max-width: 1020px) {
+@media screen and (min-width: 802px) and (max-width: 1562px) {
 	.content_short .content-block-item:nth-child(n+4) {
 		display: none;
 	}
 }
-@media screen and (min-width: 1020px) {
+@media screen and (min-width: 1147px) {
     .content aside.content-aside {
         float: right;
         margin-right: 0;
@@ -217,12 +245,7 @@ body {
         margin-right: 345px;
     }
 }
-@media screen and (min-width: 1020px) and (max-width: 1380px) {
-    .content_short .content-block-item:nth-child(n+4) {
-		display: none;
-	}
-}
-@media screen and (min-width: 1065px) {
+@media screen and (min-width: 1192px) {
     .content-block, .header-logo {
         margin-bottom: 30px;
     }
@@ -244,12 +267,12 @@ body {
         padding-top: 30px;
     }
 }
-@media screen and (min-width: 1380px) and (max-width: 1695px) {
+@media screen and (min-width: 1562px) and (max-width: 1932px) {
 	.content_short .content-block-item:nth-child(n+5) {
 		display: none;
 	}
 }
-@media screen and (min-width: 1695px) {
+@media screen and (min-width: 1932px) {
 	.content_short .content-block-item:nth-child(n+6) {
 		display: none;
 	}
