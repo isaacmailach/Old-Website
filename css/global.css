@@ -1,4 +1,5 @@
 body {
+    background-color: #add24a;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -17,6 +18,7 @@ body {
 	background-image: url('img/background_image.jpg');
 	-webkit-background-size: 100% 100%;
 	background-size: 100%;
+    display: none;
 	height: 110vh;
 	position: fixed;
 	top: 0;
@@ -85,11 +87,10 @@ body {
 }
 
 .content {
-    clear: both;
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+    -webkit-flex: 1 0 auto;
+    -ms-flex: 1 0 auto;
+    flex: 1 0 auto;
     overflow: hidden;
 	padding: 15px;
 }
@@ -107,11 +108,11 @@ body {
 .content-block-heading {
     background-color: #d6d6d6;
     color: #191919;
+    flex: 1 100%;
     font-weight: 900;
     margin: -10px;
     margin-bottom: 10px;
     padding: 10px;
-    width: 100%;
 }
 .content-block-heading_link {
     width: 100%;
@@ -236,6 +237,9 @@ body {
 	}
 }
 @media screen and (min-width: 1147px) {
+    .background {
+        display: block;
+    }
     .content aside.content-aside {
         float: right;
         margin-right: 0;
