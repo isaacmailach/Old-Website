@@ -21,4 +21,7 @@ $(document).ready(function() {
             $('.content-aside').css({'position': 'static'});
         }
     });
+    
+    // "Read more" Link
+    
 });
