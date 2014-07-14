@@ -9,9 +9,6 @@ $(document).ready(function () {
     })
 
     // AJAX Info Popup
-    if ($(document).height() > $(window).height() === false) {
-        $('.footer').css({'position': 'absolute', 'bottom': '0'});
-    }
     $('.content-block-item-heading').click(function () {
         var item_id = $(this).parent().data('id');
         $('.popup-content-imagebox').empty();
@@ -51,4 +48,12 @@ function ClosePopup () {
     $('.popup').css('opacity', '0');
     setTimeout(function () {$('.popup').css('display', 'none');}, 150);
     popup_open = false;
+}
+function viewport() {
+    var e = window, a = 'inner';
+    if (!('innerWidth' in window )) {
+        a = 'client';
+        e = document.documentElement || document.body;
+    }
+    return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
 }
