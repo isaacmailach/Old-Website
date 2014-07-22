@@ -4,7 +4,7 @@
         <heading>The Moon</heading>
         <other>
             <![CDATA[
-                <audio class="content-block-item-audio" controls>
+                <audio class="content-block-item-overlay-audio" controls>
                     <source src="audio/the-moon.ogg" type="audio/ogg" />
                     <source src="audio/the-moon.mp3" type="audio/mpeg" />
                     <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129574440&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
@@ -21,7 +21,7 @@
         <heading>From 2D to 3D</heading>
         <other>
             <![CDATA[
-                <audio class="content-block-item-audio" controls>
+                <audio class="content-block-item-overlay-audio" controls>
                     <source src="audio/from-2d-to-3d.ogg" type="audio/ogg" />
                     <source src="audio/from-2d-to-3d.mp3" type="audio/mpeg" />
                     <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129573458&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
@@ -38,7 +38,7 @@
         <heading>When it Rains</heading>
         <other>
             <![CDATA[
-                <audio class="content-block-item-audio" controls>
+                <audio class="content-block-item-overlay-audio" controls>
                     <source src="audio/when-it-rains.ogg" type="audio/ogg" />
                     <source src="audio/when-it-rains.mp3" type="audio/mpeg" />
                     <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129573492&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
@@ -55,7 +55,7 @@
         <heading>The Woods of Winter</heading>
         <other>
             <![CDATA[
-                <audio class="content-block-item-audio" controls>
+                <audio class="content-block-item-overlay-audio" controls>
                     <source src="audio/the-woods-of-winter.ogg" type="audio/ogg" />
                     <source src="audio/the-woods-of-winter.mp3" type="audio/mpeg" />
                     <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/144396292&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true">Sorry, you're brower does not support audio playback.</iframe>
@@ -72,7 +72,7 @@
         <heading>Time</heading>
         <other>
             <![CDATA[
-                <audio class="content-block-item-audio" controls>
+                <audio class="content-block-item-overlay-audio" controls>
                     <source src="audio/time.ogg" type="audio/ogg" />
                     <source src="audio/time.mp3" type="audio/mpeg" />
                     <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/144396292&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true">Sorry, you're brower does not support audio playback.</iframe>
