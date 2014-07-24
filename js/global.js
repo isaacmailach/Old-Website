@@ -2,11 +2,17 @@ var popup_open = false;
 
 $(document).ready(function () {
 
-    // Background Paralax Effect
+    // Fade-In on Image Load
+    $('img').addClass('invisible')
+    $('img').load(function () {
+        $(this).addClass('fadein');
+    });
+
+    /*// Background Paralax Effect
     var scroll_height = $(document).height() - $(window).height();
     $(document).scroll(function () {
         $('.background').css('top', - $(document).scrollTop() / scroll_height * $(window).height() / 10);
-    })
+    })*/
 
     // AJAX Info Popup
     $('.content-block-item').click(function () {
