@@ -130,29 +130,29 @@ body {
     -ms-flex: 1;
     flex: 1;
 	float: left;
-    height: 0;
+    line-height: 0;
     margin: 10px;
-    min-width: 350px;
-    padding-bottom: 100%;
+    min-width: 325px;
+    position: relative;
     -webkit-transition: -webkit-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     width: 100%;
 }
 .content-block-item-image {
-    height: 0;
-    margin-bottom: -100%;
     width: 100%;
 }
 .content-block-item-overlay {
     background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
     color: white;
-    height: 0;
-    margin: 0;
+    left: 0;
+    line-height: normal;
     opacity: 0;
-    padding-bottom: 100%;
-    position: relative;
+    padding: 15px;
+    position: absolute;
+    right: 0;
+    top: 0;
     transition: opacity 0.28s cubic-bezier(0.4, 0, 0.2, 1);
-    width: 100%;
 }
 .content-block-item-overlay-heading {
     cursor: pointer;
@@ -276,7 +276,7 @@ body {
     white-space: normal;
 }
 
-@media screen and (max-width: 802px) {
+@media screen and (max-width: 752px) {
     .content_short .content-block-item {
         min-width: 0;
     }
@@ -285,12 +285,12 @@ body {
 		display: none;
 	}
 }
-@media screen and (min-width: 802px) and (max-width: 1562px) {
+@media screen and (min-width: 752px) and (max-width: 1487px) {
 	.content_short .content-block-item:nth-child(n+4) {
 		display: none;
 	}
 }
-@media screen and (min-width: 1147px) {
+@media screen and (min-width: 1097px) {
     .background {
         display: block;
     }
@@ -303,7 +303,7 @@ body {
         margin-right: 345px;
     }
 }
-@media screen and (min-width: 1192px) {
+@media screen and (min-width: 1142px) {
     .content-block, .header-logo {
         margin-bottom: 30px;
     }
@@ -325,12 +325,12 @@ body {
         padding: 30px;
     }
 }
-@media screen and (min-width: 1562px) and (max-width: 1932px) {
+@media screen and (min-width: 1487px) and (max-width: 1832px) {
 	.content_short .content-block-item:nth-child(n+5) {
 		display: none;
 	}
 }
-@media screen and (min-width: 1932px) {
+@media screen and (min-width: 1832px) {
 	.content_short .content-block-item:nth-child(n+6) {
 		display: none;
 	}
