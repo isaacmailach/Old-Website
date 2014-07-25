@@ -23,7 +23,7 @@ $(document).ready(function () {
         $('.popup').addClass('displayflex');
         setTimeout(function () {$('.popup').css('opacity', '1');}, 1);
         $.get('data/item-info.xml', function (item_info){
-            $('.popup-content-heading').html($(item_info).find('item[id="' + item_id + '"]').find('heading').text());
+            $('.popup-content-text-heading').html($(item_info).find('item[id="' + item_id + '"]').find('heading').text());
             $('.popup-viewer').append($(item_info).find('item[id="' + item_id + '"]').find('other').text());
             var images = $(item_info).find('item[id="' + item_id + '"]').find('image');
             for (var id = 0; id < images.length; id++) {
@@ -33,7 +33,7 @@ $(document).ready(function () {
                     $('.popup-viewer').append('<img class="popup-viewer-image" src="img/' + images[id].textContent + '" />');
                 }
             }
-            $('.popup-content-text').html($(item_info).find('item[id="' + item_id + '"]').find('text').text());
+            $('.popup-content-text-body').html($(item_info).find('item[id="' + item_id + '"]').find('text').text());
         })
             .fail(function() {
                 alert('fail');
