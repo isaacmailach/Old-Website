@@ -25,6 +25,9 @@ body {
 	width: 100%;
 	z-index: -100;
 }
+em {
+    font-family: robotoitalic;
+}
 
 .header-nav-link, .content-block-heading_link, .content-block-item-overlay-text_link, .content-block-text_link, .content-block-item-overlay-text:after {
     color: black;
@@ -107,6 +110,7 @@ body {
 	padding: 15px;
 }
 .content-block {
+    align-items: flex-start;
     display: -webkit-box;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -290,6 +294,14 @@ body {
 }
 
 @media screen and (max-width: 752px) {
+    .header-nav {
+        height: auto;
+    }
+    .header-nav-link {
+        display: block;
+        float: none;
+        width: 100%;
+    }
     .content_short .content-block-item {
         min-width: 0;
     }
