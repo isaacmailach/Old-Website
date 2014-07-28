@@ -12,10 +12,11 @@
         <meta name="apple-mobile-web-app-capable" content="yes" />
 		
 		<link rel="icon" type="image/icon" href="favicon.ico" />
-		<link rel="stylesheet" type="text/css" href="css/global.css" />
         <link rel="apple-touch-icon" href="img/logo.png" />
+        <link rel="stylesheet" type="text/css" href="css/global.css" />
 
-        <script src="js/jquery-1.11.1.min.js"></script>
+        <script src="js/library/jquery-1.11.1.min.js"></script>
+        <script src="js/library/audio.min.js"></script>
         <script src="js/global.js"></script>
         <script src="js/home.js"></script>
         <script>
@@ -25,6 +26,11 @@
             })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
             ga('create', 'UA-52822113-1', 'auto');
             ga('send', 'pageview');
+        </script>
+        <script>
+            audiojs.events.ready(function() {
+                var as = audiojs.createAll();
+            });
         </script>
 	</head>
 	<body>
@@ -59,7 +65,7 @@
                     <img class="content-block-item-image" src="img/music-compositions/000501.jpg" alt="Time" />
                     <section class="content-block-item-overlay">
                         <h3 class="content-block-item-overlay-heading">Time</h3>
-                        <audio class="content-block-item-overlay-audio" controls>
+                        <audio class="content-block-item-overlay-audio">
                             <source src="audio/time.ogg" type="audio/ogg" />
                             <source src="audio/time.mp3" type="audio/mpeg" />
                             <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/144396292&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true">Sorry, you're brower does not support audio playback.</iframe>
@@ -71,7 +77,7 @@
                     <img class="content-block-item-image" src="img/music-compositions/000401.jpg" alt="The Woods of Winter" />
                     <section class="content-block-item-overlay">
                         <h3 class="content-block-item-overlay-heading">The Woods of Winter</h3>
-                        <audio class="content-block-item-overlay-audio" controls>
+                        <audio class="content-block-item-overlay-audio">
                             <source src="audio/the-woods-of-winter.ogg" type="audio/ogg" />
                             <source src="audio/the-woods-of-winter.mp3" type="audio/mpeg" />
                             <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/144396292&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true">Sorry, you're brower does not support audio playback.</iframe>
@@ -83,7 +89,7 @@
                     <img class="content-block-item-image" src="img/music-compositions/000301.jpg" alt="When it Rains" />
                     <section class="content-block-item-overlay">
                         <h3 class="content-block-item-overlay-heading">When it Rains</h3>
-                        <audio class="content-block-item-overlay-audio" controls>
+                        <audio class="content-block-item-overlay-audio">
                             <source src="audio/when-it-rains.ogg" type="audio/ogg" />
                             <source src="audio/when-it-rains.mp3" type="audio/mpeg" />
                             <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129573492&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
@@ -95,7 +101,7 @@
                     <img class="content-block-item-image" src="img/music-compositions/000201.jpg" alt="From 2D to 3D" />
                     <section class="content-block-item-overlay">
                         <h3 class="content-block-item-overlay-heading">From 2D to 3D</h3>
-                        <audio class="content-block-item-overlay-audio" controls>
+                        <audio class="content-block-item-overlay-audio">
                             <source src="audio/from-2d-to-3d.ogg" type="audio/ogg" />
                             <source src="audio/from-2d-to-3d.mp3" type="audio/mpeg" />
                             <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129573458&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
