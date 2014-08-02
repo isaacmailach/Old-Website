@@ -15,7 +15,7 @@ $(document).ready(function () {
     })*/
 
     // AJAX Info Popup
-    $('.content-block-item').click(function () {
+    $('.content-block-itembox-item').click(function () {
         var item_id = $(this).data('id');
         $('.popup-viewer').empty();
         $('.popup-content-image').attr('src','');
