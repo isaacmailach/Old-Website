@@ -3,10 +3,17 @@ var popup_open = false;
 $(document).ready(function () {
 
     // Fade-In on Image Load
-    $('img').addClass('invisible')
-    $('img').load(function () {
-        $(this).addClass('fadein');
-    });
+    if (!ie()) {
+        $('img').addClass('invisible')
+        $('img').bind('load', function() {
+            $(this).addClass('fadein');
+        });
+    }
+    /*$("img").each(function() {
+            var img = $(this);
+            var src = img.attr('src');
+            img.attr("src", src + "?" + new Date().getTime());
+    });*/
 
     /*// Background Paralax Effect
     var scroll_height = $(document).height() - $(window).height();
@@ -67,4 +74,14 @@ function viewport() {
         e = document.documentElement || document.body;
     }
     return { width : e[ a+'Width' ] , height : e[ a+'Height' ] };
+}
+
+function ie() {
+    var ua = window.navigator.userAgent;
+    var msie = ua.indexOf("MSIE ");
+    if (msie > 0 || !!navigator.userAgent.match(/Trident.*rv\:11\./)) {
+        return true;
+    } else {
+        return false;
+    }
 }
