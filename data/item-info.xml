@@ -2,15 +2,7 @@
 <info>
     <item id="010001">
         <heading>The Moon</heading>
-        <other>
-            <![CDATA[
-                <audio class="content-block-itembox-item-overlay-audio" controls>
-                    <source src="audio/the-moon.ogg" type="audio/ogg" />
-                    <source src="audio/the-moon.mp3" type="audio/mpeg" />
-                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129574440&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
-                </audio>
-            ]]>
-        </other>
+        <audio>music-compositions/000101</audio>
         <image>music-compositions/000101.jpg</image>
         <text>
             <![CDATA[
@@ -20,15 +12,7 @@
     </item>
     <item id="010002">
         <heading>From 2D to 3D</heading>
-        <other>
-            <![CDATA[
-                <audio class="content-block-itembox-item-overlay-audio" controls>
-                    <source src="audio/from-2d-to-3d.ogg" type="audio/ogg" />
-                    <source src="audio/from-2d-to-3d.mp3" type="audio/mpeg" />
-                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129573458&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
-                </audio>
-            ]]>
-        </other>
+        <audio>music-compositions/000201</audio>
         <image>music-compositions/000201.jpg</image>
         <text>
             <![CDATA[
@@ -38,15 +22,7 @@
     </item>
     <item id="010003">
         <heading>When it Rains</heading>
-        <other>
-            <![CDATA[
-                <audio class="content-block-itembox-item-overlay-audio" controls>
-                    <source src="audio/when-it-rains.ogg" type="audio/ogg" />
-                    <source src="audio/when-it-rains.mp3" type="audio/mpeg" />
-                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/129573492&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true"></iframe>
-                </audio>
-            ]]>
-        </other>
+        <audio>music-compositions/000301</audio>
         <image>music-compositions/000301.jpg</image>
         <text>
             <![CDATA[
@@ -56,15 +32,7 @@
     </item>
     <item id="010004">
         <heading>The Woods of Winter</heading>
-        <other>
-            <![CDATA[
-                <audio class="content-block-itembox-item-overlay-audio" controls>
-                    <source src="audio/the-woods-of-winter.ogg" type="audio/ogg" />
-                    <source src="audio/the-woods-of-winter.mp3" type="audio/mpeg" />
-                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/144396292&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true">Sorry, you're brower does not support audio playback.</iframe>
-                </audio>
-            ]]>
-        </other>
+        <audio>music-compositions/000401</audio>
         <image>music-compositions/000401.jpg</image>
         <text>
             <![CDATA[
@@ -74,15 +42,7 @@
     </item>
     <item id="010005">
         <heading>Time</heading>
-        <other>
-            <![CDATA[
-                <audio class="content-block-itembox-item-overlay-audio" controls>
-                    <source src="audio/time.ogg" type="audio/ogg" />
-                    <source src="audio/time.mp3" type="audio/mpeg" />
-                    <iframe width="100%" height="166" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/144396292&amp;color=000000&amp;auto_play=false&amp;hide_related=false&amp;show_artwork=true">Sorry, you're brower does not support audio playback.</iframe>
-                </audio>
-            ]]>
-        </other>
+        <audio>music-compositions/000501</audio>
         <image>music-compositions/000501.jpg</image>
         <text>
             <![CDATA[
@@ -92,13 +52,7 @@
     </item>
     <item id="020001">
         <heading>The Day the Caf Ran Out of Muffins</heading>
-        <other>
-            <![CDATA[
-                <section class="content-block-itembox-item-wrapper">
-                    <iframe class="content-block-itembox-item-wrapper-video" height="250px" src="//www.youtube.com/embed/-0XGoe5uM50?rel=0" frameborder="0" allowfullscreen></iframe>
-                </section>
-            ]]>
-        </other>
+        <video>//www.youtube.com/embed/-0XGoe5uM50?rel=0</video>
         <image>films/000101.jpg</image>
         <text>
             <![CDATA[
@@ -108,13 +62,7 @@
     </item>
     <item id="020002">
         <heading>Saving for Yesterday</heading>
-        <other>
-            <![CDATA[
-                <section class="content-block-itembox-item-wrapper">
-                    <iframe class="content-block-itembox-item-wrapper-video" height="250px" src="//www.youtube.com/embed/jdqoPvBPDHY?rel=0" frameborder="0" allowfullscreen></iframe>
-                </section>
-            ]]>
-        </other>
+        <video>//www.youtube.com/embed/jdqoPvBPDHY?rel=0</video>
         <image>films/000201.jpg</image>
         <text>
             <![CDATA[
@@ -124,14 +72,9 @@
     </item>
     <item id="020003">
         <heading>Mining and the World</heading>
-        <other>
-            <![CDATA[
-                <section class="content-block-itembox-item-wrapper">
-                    <iframe class="content-block-itembox-item-wrapper-video" height="250px" src="//www.youtube.com/embed/0oQtFYP8FTY" frameborder="0" allowfullscreen></iframe>
-                </section>
-            ]]>
-        </other>
+        <video>//www.youtube.com/embed/0oQtFYP8FTY</video>
         <image>films/000301.jpg</image>
+        <image>films/000302.jpg</image>
         <text>
             <![CDATA[
 
