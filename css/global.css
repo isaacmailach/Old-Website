@@ -16,6 +16,9 @@ body {
     margin: 0;
     min-height: 100vh;
 }
+audio {
+    width: 100%;
+}
 .background {
     background-color: #EDEDED;
 	-webkit-background-size: 100% 100%;
@@ -191,8 +194,8 @@ body {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
-.content-block-itembox-item-wrapper {
-    height: 0;
+/*.content-block-itembox-item-wrapper {
+    width: 100%;
     padding-bottom: 56.25%;
     position: relative;
 }
@@ -202,7 +205,7 @@ body {
     position: absolute;
     top: 0;
     width: 100%;
-}
+}*/
 .content-block-text {
     margin: 0;
     padding: 15px;
@@ -235,11 +238,6 @@ body {
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     display: none;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
     left: 0;
     opacity: 0;
     position: fixed;
@@ -250,9 +248,11 @@ body {
     width: 100%;
 }
 .popup-content {
-    height: 250px;
+    bottom: 0;
+    height: 225px;
     overflow-y: auto;
-    width:100%;
+    position: absolute;
+    width: 100%;
 }
 .popup-content-image {
     height: 100%;
@@ -264,26 +264,43 @@ body {
 .popup-content-text-heading {
     margin-bottom: 10px;
 }
-.popup-viewer {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
-    margin: auto;
+.popup-controls {
+    background-color: #414141;
+    bottom: 225px;
+    color: #bfbfbf;
+    height: 50px;
+    position: absolute;
     width: 100%;
-    padding: 0;
     text-align: center;
 }
-.popup-viewer * {
-    -webkit-box-flex: 1;
-    -webkit-flex: 1;
-    -ms-flex: 1;
-    flex: 1;
+.popup-controls-buttonbox-button {
     height: 100%;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    width: 60px;
+}
+.popup-controls-buttonbox-button_clickable {
+    color: white;
+    cursor: pointer;
+    -webkit-transition: background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.popup-viewer {
+    bottom: 275px;
+    left: 0;
+    position: absolute;
+    right: 0;
+    text-align: center;
+    top: 0;
+}
+.popup-viewer * {
+    height: 100%;
+    margin: auto;
+}
+.popup-viewer-video {
+    width: 100%;
 }
 
 .header-nav-link:hover {
@@ -311,6 +328,9 @@ body {
     text-align: right;
     text-overflow: inherit;
     white-space: normal;
+}
+.popup-controls-buttonbox-button_clickable:hover {
+    background-color: #676767;
 }
 
 @media screen and (max-width: 702px) {
@@ -415,12 +435,6 @@ body {
     border-radius: 0;
 }
 
-.displayflex {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-}
 img.fadein {
     opacity: 1;
     -webkit-transition: opacity 0.28s cubic-bezier(0.4, 0, 0.2, 1);
@@ -434,6 +448,16 @@ img.fadein {
     direction: rtl;
 }
 
+@font-face {
+    font-family: 'icon';
+    src: url('/font/icon.eot');
+    src: url('/font/icon.eot?#iefix') format('embedded-opentype'),
+         url('/font/icon.woff') format('woff'),
+         url('/font/icon.ttf') format('truetype'),
+         url('/font/icon.svg#icon') format('svg');
+    font-weight: 400;
+    font-style: normal;
+}
 @font-face {
     font-family: 'Roboto';
     src: url('/font/roboto-regular-webfont.eot');
@@ -495,3 +519,61 @@ img.fadein {
     font-style: italic;
 }
 
+.icon {
+    display: inline-block;
+    font-family: icon;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-style: normal;
+    font-weight: normal;
+}
+.icon-loading:before {
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    -webkit-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+    color: white;
+    content: "\f1ce";
+    font-size: 2rem;
+}
+.icon-rarrow:before {
+    content: "\f054";
+}
+.icon-larrow:before {
+    content: "\f053";
+}
+
+@-moz-keyframes spin {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    100% {
+        -moz-transform: rotate(359deg);
+    }
+}
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+    }
+}
+@-o-keyframes spin {
+    0% {
+        -o-transform: rotate(0deg);
+    }
+    100% {
+        -o-transform: rotate(359deg);
+    }
+}
+@keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
