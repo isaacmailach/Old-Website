@@ -28,6 +28,7 @@
         </script>
 	</head>
 	<body>
+        <div id="wrapper1">
 		<!-- Template - Header -->
         <header class="header">
             <a class="header-logo_link" href="index.html"><img class="header-logo" src="img/logo.png" alt="Logo" /></a>
@@ -43,6 +44,7 @@
                 <a class="header-nav-link_left header-nav-link" href="coding-projects.html">Coding Projects</a>
                 <a class="header-nav-link_right header-nav-link" href="about.html">About</a>
             </nav>
+            <div id="spacer1"></div>
         </header>
         <!-- Content -->
         <section class="content">
@@ -70,20 +72,31 @@
                 </section>
             </section>
         </section>
+        </div>
         <!-- Template - Footer -->
         <footer class="footer">
             <small class="footer-text">&copy; Isaac Mailach</small>
         </footer>
         <!-- Template - Overlays -->
-        <div class="background"></div>
-        <section class="popup">
-            <section class="popup-viewer"></section>
-            <section class="popup-controls"></section>
-            <section class="popup-content">
+        <div class="popup">
+            <div class="popup-viewer"></div>
+            <div class="popup-controls">
+                <div class="popup-controls-buttonbox popup-controls-buttonbox_left">
+                    <div class="popup-controls-buttonbox-button popup-controls-buttonbox-button_close popup-controls-buttonbox-button_clickable"><i class="icon icon-close"></i></div>
+                    <div class="popup-controls-buttonbox-button popup-controls-buttonbox-button_toggle popup-controls-buttonbox-button_clickable"><i class="icon icon-darrow"></i></div>
+                </div>
+                <div class="popup-controls-buttonbox popup-controls-buttonbox_centre">
+                    <div class="popup-controls-buttonbox-button popup-controls-buttonbox-button_left"><i class="icon icon-larrow"></i></div>
+                    <div class="popup-controls-buttonbox-button popup-controls-buttonbox-button_right"><i class="icon icon-rarrow"></i></div>
+                </div>
+            </div>
+            <div class="popup-content">
                 <img class="popup-content-image" />
-                <h3 class="popup-content-text-heading"></h3>
-                <p class="popup-content-text-body"></p>
-            </section>
-        </section>
+                <section class="popoup-content-text">
+                    <h3 class="popup-content-text-heading"></h3>
+                    <p class="popup-content-text-body"></p>
+                </section>
+            </div>
+        </div>
     </body>
 </html>
