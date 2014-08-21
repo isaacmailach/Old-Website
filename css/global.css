@@ -61,11 +61,14 @@ audio {
     clear: both;
     height: 50px;
     left: 0;
+    opacity: 1;
 	overflow: hidden;
     position: relative;
     top: 0;
     -webkit-transition: -webkit-box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     transition: box-shadow 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-property: -webkit-box-shadow, opacity;
+    transition-property: box-shadow, opacity;
     width: 100%;
     z-index: 1;
 }
@@ -455,6 +458,10 @@ audio {
     .popup-viewer {
         padding: 30px;
     }
+    
+    nav.fixednav {
+        padding: 0 30px;
+    }
 }
 @media screen and (min-width: 1412px) and (max-width: 1732px) {
 	.content_short .content-block-itembox-item:nth-child(n+4) {
@@ -494,7 +501,8 @@ audio {
 .fixednav {
     -webkit-box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 0 30px;
+    opacity: 0.90;
+    padding: 0 15px;
     position: fixed;
 }
 .hidden div.popup-content {
