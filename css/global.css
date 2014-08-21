@@ -260,7 +260,7 @@ audio {
 }
 .popup-controls-buttonbox_centre {
     text-align: center;
-    width: 150px;
+    width: 130px;
     margin: auto;
 }
 .popup-controls-buttonbox_left {
@@ -282,6 +282,18 @@ audio {
     -webkit-transition: background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     transition: background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
+.popup-controls-buttonbox-button_close .icon:before {
+    content: "\f00d"
+}
+.popup-controls-buttonbox-button_left .icon:before {
+    content: "\f053";
+}
+.popup-controls-buttonbox-button_right .icon:before {
+    content: "\f054";
+}
+.popup-controls-buttonbox-button_toggle .icon:before {
+    content: "\f107";
+}
 .popup-viewer {
     color: white;
     left: 0;
@@ -295,12 +307,29 @@ audio {
     -webkit-transition-property: bottom, opacity;
     transition-property: bottom, opacity;
 }
+.popup-viewer .icon:before {
+    -moz-animation: spin 2s infinite linear;
+    -o-animation: spin 2s infinite linear;
+    -webkit-animation: spin 2s infinite linear;
+    animation: spin 2s infinite linear;
+    content: "\f1ce";
+    font-size: 2rem;
+}
 .popup-viewer * {
     -webkit-box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24);
     height: 100%;
     margin: auto;
     z-index: 1;
+}
+audio.popup-viewer-audio {
+    bottom: 50%;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: 30px;
+    left: 0;
+    position: absolute;
+    right: 0;
 }
 .popup-viewer-video {
     width: 100%;
@@ -511,6 +540,11 @@ audio {
 .hidden div.popup-controls {
     bottom: 0px;
 }
+.hidden .popup-controls-buttonbox-button_toggle .icon:before {
+    -webkit-animation: halfspin 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: halfspin 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    content: "\f106";
+}
 img.fadein {
     opacity: 1;
     -webkit-transition: opacity 0.28s cubic-bezier(0.4, 0, 0.2, 1);
@@ -521,7 +555,8 @@ img.fadein {
 }
 .open.popup {
     background-color: rgba(0, 0, 0, 0.5);
-}.open .popup-content {
+}
+.open .popup-content {
     bottom: 0;
 }
 .open .popup-viewer {
@@ -606,35 +641,47 @@ img.fadein {
 .icon {
     display: inline-block;
     font-family: icon;
+    font-size: 1.2rem;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-style: normal;
     font-weight: normal;
 }
-.icon-close:before {
-    content: "\f00d"
-}
-.icon-darrow:before {
-    content: "\f107";
-}
-.icon-larrow:before {
-    content: "\f053";
-}
-.icon-loading:before {
-    -moz-animation: spin 2s infinite linear;
-    -o-animation: spin 2s infinite linear;
-    -webkit-animation: spin 2s infinite linear;
-    animation: spin 2s infinite linear;
-    content: "\f1ce";
-    font-size: 2rem;
-}
-.icon-rarrow:before {
-    content: "\f054";
-}
-.icon-uarrow:before {
-    content: "\f106"
-}
 
+@-moz-keyframes halfspin {
+    0% {
+        -moz-transform: rotate(180deg);
+    }
+    100% {
+        -moz-transform: rotate(0deg);
+    }
+}
+@-o-keyframes halfspin {
+    0% {
+        -o-transform: rotate(180deg);
+    }
+    100% {
+        -o-transform: rotate(0deg);
+    }
+}
+@-webkit-keyframes halfspin {
+    0% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
+}
+@keyframes halfspin {
+    0% {
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+}
 @-moz-keyframes spin {
     0% {
         -moz-transform: rotate(0deg);
