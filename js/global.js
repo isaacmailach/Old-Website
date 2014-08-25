@@ -103,10 +103,10 @@ $(document).ready(function () {
         if (right) {
             counter++;
             $('.popup-viewer > *:nth-child(' + (counter - 1) + ')').css('display', 'none');
-            $('.popup-viewer > *:nth-child(' + counter + ')').css('display', 'block');
+            $('.popup-viewer > *:nth-child(' + counter + ')').css('display', 'initial');
             left = true;
             $('.popup-controls-buttonbox-button_left').addClass('popup-controls-buttonbox-button_clickable');
-            if (counter = $('.popup-viewer > *').length) {
+            if (counter === $('.popup-viewer > *').length) {
                 right = false;
                 $('.popup-controls-buttonbox-button_right').removeClass('popup-controls-buttonbox-button_clickable');
             }
@@ -116,8 +116,8 @@ $(document).ready(function () {
         if (left) {
             counter += -1;
             $('.popup-viewer > *:nth-child(' + (counter + 1) + ')').css('display', 'none');
-            $('.popup-viewer > *:nth-child(' + counter + ')').css('display', 'block');
-            if (counter = 1) {
+            $('.popup-viewer > *:nth-child(' + counter + ')').css('display', 'initial');
+            if (counter === 1) {
                 left = false;
                 $('.popup-controls-buttonbox-button_left').removeClass('popup-controls-buttonbox-button_clickable');
             }
