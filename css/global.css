@@ -190,9 +190,22 @@ audio {
     text-overflow: ellipsis;
     white-space: nowrap;
 }
+.content-block-social {
+    margin: 15px;
+}
+.content-block-social-link_google .icon:before {
+    border-radius: 50%;
+    content: "\f0d5";
+    padding: 10px;
+    -webkit-transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition-property: background-color, color;
+    transition-property: background-color, color;
+}
 .content-block-text {
     margin: 0;
     padding: 15px;
+    padding-bottom: 0;
 }
 
 .footer {
@@ -396,6 +409,10 @@ audio.popup-viewer-audio {
     text-align: right;
     text-overflow: inherit;
     white-space: normal;
+}
+.content-block-social-link_google .icon:hover:before {
+    background-color: #3f51b5;
+    color: white;
 }
 .popup-controls-buttonbox-button_clickable:hover {
     background-color: #676767;
@@ -671,6 +688,7 @@ img.fadein {
 }
 
 .icon {
+    color: black;
     display: inline-block;
     font-family: icon;
     font-size: 1.2rem;
