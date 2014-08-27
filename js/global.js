@@ -44,6 +44,7 @@ $(document).ready(function () {
         }, 1);
         $.get('data/item-info.xml', function (item_info){
             $('.popup-content-text-heading').html($(item_info).find('item[id="' + item_id + '"]').find('heading').text());
+            $('.popup-content-image_link').attr('href', $(item_info).find('item[id="' + item_id + '"]').find('link').text())
             $('.popup-viewer').append($(item_info).find('item[id="' + item_id + '"]').find('other').text());
             var video = $(item_info).find('item[id="' + item_id + '"]').find('video');
             for (var id = 0; id < video.length; id++) {
@@ -58,7 +59,7 @@ $(document).ready(function () {
                 if (id == 0) {
                     $('.popup-content-image').attr('src', 'img/' + image[id].textContent);
                 } else {
-                    $('.popup-viewer').append('<a href="img/' + image[id].textContent + '"><img class="popup-viewer-image" src="img/' + image[id].textContent + '" /></a>');
+                    $('.popup-viewer').append('<a href="img/' + image[id].textContent + '" target="_blank"><img class="popup-viewer-image" src="img/' + image[id].textContent + '" /></a>');
                 }
             }
             $('.popup-content-text-body').html($(item_info).find('item[id="' + item_id + '"]').find('text').text());
@@ -75,6 +76,9 @@ $(document).ready(function () {
                 $('.popup-controls-buttonbox-button_left').removeClass('popup-controls-buttonbox-button_clickable');
             }
             counter = 1;
+            $('.popup-viewer *').click(function () {
+                event.stopPropagation();
+            });
         })
             .fail(function() {
                 alert('fail');
@@ -86,6 +90,9 @@ $(document).ready(function () {
         if (e.keyCode === 27) {
             ClosePopup();
         }
+    });
+    $('.popup-viewer').click(function () {
+        ClosePopup();
     });
     $('.popup-controls-buttonbox-button_close').click(function () {
         ClosePopup();
@@ -140,8 +147,7 @@ $(document).ready(function () {
 function ClosePopup () {
     $('.popup').removeClass('hidden');
     $('.popup').removeClass('open');
-    $('.popup-viewer').empty();
-    setTimeout(function () {$('.popup').css('display', 'none');}, 280);
+    setTimeout(function () {$('.popup').css('display', 'none'); $('.popup-viewer').empty();}, 280);
     popup_open = false;
 }
 function Viewport() {

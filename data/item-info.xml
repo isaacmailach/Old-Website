@@ -56,7 +56,7 @@
         <image>films/000101.jpg</image>
         <text>
             <![CDATA[
-                After taking many courses in theory, such as Rudiments and Harmony, I noticed that I was focusing too strongly on the technical side of composing. Everything, in my mind, had to fit harmonically and work perfectly in the composition. It was my goal in this piece to break that mold and create pieces of music that were more unnatural and uncomfortable to listen to to. In this piece, I used accidentals more often than in most of my compositions, I made phrases with odd numbers of bars and broke many other rules. The result was a stimulating work.
+                
             ]]>
         </text>
     </item>
@@ -66,7 +66,7 @@
         <image>films/000201.jpg</image>
         <text>
             <![CDATA[
-                After taking many courses in theory, such as Rudiments and Harmony, I noticed that I was focusing too strongly on the technical side of composing. Everything, in my mind, had to fit harmonically and work perfectly in the composition. It was my goal in this piece to break that mold and create pieces of music that were more unnatural and uncomfortable to listen to to. In this piece, I used accidentals more often than in most of my compositions, I made phrases with odd numbers of bars and broke many other rules. The result was a stimulating work.
+                <em>Saving for Yesterday</em> is a film about limiting smaller luxuries in order to afford large luxuries. It was submitted to the Financial Literacy Month Video Contest which is run by the Financial Consumer Agency of Canada. The film received honourary mention.
             ]]>
         </text>
     </item>
@@ -92,6 +92,7 @@
     </item>
     <item id="040001">
         <heading>Fun Functions</heading>
+        <link>http://isaacmailach.github.io/Fun-Functions/Fun%20Functions</link>
         <image>coding-projects/000101.jpg</image>
         <text>
             <![CDATA[
@@ -101,6 +102,7 @@
     </item>
     <item id="040002">
         <heading>Time</heading>
+        <link>http://isaacmailach.github.io/Time/Time</link>
         <image>coding-projects/000201.jpg</image>
         <image>coding-projects/000202.png</image>
         <image>coding-projects/000203.png</image>
@@ -109,7 +111,7 @@
         <image>coding-projects/000206.png</image>
         <text>
             <![CDATA[
-
+                <p>The digital art piece, <em>Time</em> is meant to show the repetitive process of growth and decay as time passes and how this affects one's legacy. <em>Time</em> involves a simple animation of a tree growing then dying as a day passes. The animation then repeats every 4 minutes. Nothing remains each loop, showing the lack of meaning in one's life. However, one can leave a message in <em>Time</em> which is reshown each loop. The message becomes a legacy, a source of meaning to the endless cycle. Others can view and be inspired by a message and leave their own message, thus adding to the collective. As <em>Time</em> evolves, more and more messages are displayed.</p><p><em>Time</em> was developed for a public display. It is made in HTML, CSS, and JavaScript. The messages are stored locally, so they will be deleted when the web page is reloaded.</p> 
             ]]>
         </text>
     </item>
