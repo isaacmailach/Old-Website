@@ -313,7 +313,7 @@ audio {
     transition: background-color 0.28s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .popup-controls-buttonbox-button_clickable .icon:before {
-    color: rgba(256, 256, 256, 0.87);
+    color: rgba(255, 255, 255, 0.87);
 }
 .popup-controls-buttonbox-button_close .icon:before {
     content: "\f00d"
@@ -489,10 +489,6 @@ audio.popup-viewer-audio {
     .popup-viewer {
         bottom: 275px;
     }
-    /*.popup-viewer * {
-        height: 100%;
-        width: auto;
-    }*/
     
     .hidden div.popup-viewer {
         bottom: 50px;
@@ -582,9 +578,6 @@ audio.popup-viewer-audio {
         position: relative;
         width: 33.3333%;
     }
-    /*.no-flexbox .content-block-itembox-item:first-child {
-        margin-left: -60px;
-    }*/
 }
 @media screen and (min-width: 1732px) {
 	.content_short .content-block-itembox-item:nth-child(n+5) {
@@ -745,40 +738,6 @@ img.fadein {
     font-weight: normal;
 }
 
-@-moz-keyframes halfspin {
-    0% {
-        -moz-transform: rotate(180deg);
-    }
-    100% {
-        -moz-transform: rotate(0deg);
-    }
-}
-@-o-keyframes halfspin {
-    0% {
-        -o-transform: rotate(180deg);
-    }
-    100% {
-        -o-transform: rotate(0deg);
-    }
-}
-@-webkit-keyframes halfspin {
-    0% {
-        -webkit-transform: rotate(180deg);
-    }
-    100% {
-        -webkit-transform: rotate(0deg);
-    }
-}
-@keyframes halfspin {
-    0% {
-        -webkit-transform: rotate(180deg);
-        transform: rotate(180deg);
-    }
-    100% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-}
 @-moz-keyframes spin {
     0% {
         -moz-transform: rotate(0deg);
