@@ -283,7 +283,7 @@ audio {
 }
 .popup-controls-buttonbox_centre {
     text-align: center;
-    width: 130px;
+    width: 104px;
     margin: auto;
 }
 .popup-controls-buttonbox_left {
@@ -302,7 +302,7 @@ audio {
     display: inline-block;
     line-height: 50px;
     text-align: center;
-    width: 60px;
+    width: 50px;
 }
 .popup-controls-buttonbox-button .icon:before {
     color: rgba(255, 255, 255, 0.54)  
