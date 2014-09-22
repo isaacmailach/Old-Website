@@ -119,9 +119,18 @@ $(document).ready(function () {
             counter = 1;
             AddPinterestLink();
             setTimeout(function () {UpdatePopupViewerRatio(); $('.popup-viewer > *').css('opacity', '1');}, 280);
+            /*$('.popup-viewer-audio').css('opacity', '1');
+            $('.popup-viewer-image').bind('load', function () {
+                UpdatePopupViewerRatio();
+                $(this).parent().css('opacity', '1');
+            });
+            $('.popup-viewer > *').bind('load', function () {
+                UpdatePopupViewerRatio();
+                $(this).css('opacity', '1');
+            });
             $('.popup-viewer *').click(function () {
                 event.stopPropagation();
-            });
+            });*/
         })
             .fail(function() {
                 alert('Sorry! Cannot connect to server. Please check your internet connection and try again.');

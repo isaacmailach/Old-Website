@@ -193,20 +193,47 @@ audio {
 .content-block-social {
     margin: 15px;
 }
-.content-block-social-link_google .icon:before {
+.content-block-social-link .icon {
+    background-color: rgba(0, 0, 0, 0.05);
     border-radius: 50%;
-    content: "\f0d5";
-    padding: 10px;
+    height: 40px;
+    line-height: 40px;
+    margin-right: 5px;
+    text-align: center;
     -webkit-transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     transition: 0.28s cubic-bezier(0.4, 0, 0.2, 1);
     -webkit-transition-property: background-color, color;
     transition-property: background-color, color;
+    width: 40px;
+}
+.content-block-social-link_github .icon:before {
+    content: "\f113";
+}
+.content-block-social-link_google .icon:before {
+    content: "\f0d5";
 }
 .content-block-text {
     font-style: normal;
-    margin: 0;
-    padding: 15px;
+    margin: 15px;
     padding-bottom: 0;
+}
+.content-block-text-item {
+    margin: 0;
+    padding: 7px 0;
+}
+.content-block-text-item .icon {
+    text-align: center;
+    width: 45px;
+}
+.content-block-text-item .icon:before {
+    font-weight: 400;
+    padding-right: 10px;
+}
+.content-block-text-item_email .icon:before {
+    content: "\f0e0"
+}
+.content-block-text-item_phone .icon:before {
+    content: "\f095"
 }
 
 .footer {
@@ -426,7 +453,7 @@ audio.popup-viewer-audio {
     text-overflow: inherit;
     white-space: normal;
 }
-.content-block-social-link_google .icon:hover:before {
+.content-block-social-link .icon:hover {
     background-color: #3f51b5;
     color: white;
 }
